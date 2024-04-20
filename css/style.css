@@ -106,6 +106,43 @@ header .container nav .navbar-brand .nav-sec {
     align-items: center;
 }
 
+#social {
+    display: flex;
+    justify-content: center; /* Horizontally center the items */
+}
+
+#social li {
+    list-style: none; /* Remove default list styles */
+    margin: 0 30px; /* Adjust margin between icons */
+}
+
+#social a {
+    display: inline-block; /* Ensure icons are displayed as blocks */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Style for the icons */
+#social a i {
+    font-size: 50px; /* Increase icon size */
+    /* Additional styles to make the icon more prominent */
+    padding: 10px; /* Add padding around the icon */
+    border: 2px solid black; /* Add border around the icon */
+    border-radius: 50%; /* Make the border circular for a button-like appearance */
+}
+
+/* Custom colors for each social icon */
+#social a[href^="https://t.me"] i {
+    background-color: #0088cc; /* Telegram color */
+}
+
+#social a[href="https://twitter.com/Momeoww_"] i {
+    background-color: #050505; /* Twitter color */
+}
+
+#social a[href="https://www.instagram.com/mom_meoww/"] i {
+    background-color: #c13584; /* Instagram color */
+}
+
 header .container nav .search-box input {
     padding: 0px 10px 0px 20px;
     font-size: 14px;
@@ -192,7 +229,7 @@ header #cls-btn {
 }
 
 header .navbar .header-nav {
-    padding-left: 20px;
+    padding-left: 60px;
 }
 
 /* ------End of Header-----*/
@@ -217,11 +254,12 @@ section.banner .container {
     text-align: center;
 }
 
+
 section.banner .container h1 {
     color: black;
     background: linear-gradient(180deg, rgb(237, 236, 222) 22%, rgb(238, 232, 193) 95%);
     border-radius: 50px;
-    font-size: 80px;
+    font-size: 50px;
     letter-spacing: -0.6px;
     text-transform: capitalize;
     font-weight: 500;
@@ -292,7 +330,7 @@ section.index-about-sec .layer .container h2 {
     line-height: 27px;
     color: whitesmoke;
     font-weight: 600;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -300,13 +338,22 @@ section.index-about-sec ul li {
     text-align: left;
 }
 
+#card-title {
+    margin-bottom: 60px;
+}
+
 section.index-about-sec ul li .index-abt-content {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    /* Set fixed width for the card */
+    width: 250px;
+    height: 300px;
     padding: 30px 30px;
     background: linear-gradient(135deg, rgba(116, 78, 102, 1) 22%, rgba(54, 109, 121, 1) 95%);
 }
 
 section.index-about-sec ul li .index-abt-content h3 {
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: -0.4px;
     line-height: 27px;
     font-weight: 600;
@@ -321,7 +368,7 @@ section.index-about-sec ul li .index-abt-content .phase {
 }
 
 section.index-about-sec ul li .index-abt-content p {
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: -0.4px;
     line-height: 21px;
     font-weight: 400;
@@ -941,7 +988,7 @@ section.about-page.get-started-btn-about {
 
 
 
-/* ------Blog page------- */
+------Blog page-------
 section.blog-page {
     text-align: left;
     padding-top: 64px;
@@ -1197,9 +1244,9 @@ section.blogsingle .write-comment ul li {
 }
 
 section.blogsingle .comments-posted {
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #c6c6c6;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 section.blogsingle .comments-posted .comments {
@@ -1246,22 +1293,6 @@ section.blogsingle .write-comment ul li textarea {
     border: 1px solid #c5c5c5;
     background: #fff;
     margin-bottom: 30px;
-}
-
-section.blogsingle .write-comment button {
-    display: inline-block;
-    min-width: 252px;
-    height: 57px;
-    background: linear-gradient(180deg, rgba(255, 244, 123, 1) 22%, rgba(255, 223, 49, 1) 95%);
-    color: #000;
-    letter-spacing: -0.6px;
-    font-size: 17px;
-    text-align: center;
-    line-height: 58px;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: all 0.6s;
-    margin-bottom: 75px;
 }
 
 /* ------End of blogsingle page------- */
