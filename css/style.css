@@ -143,7 +143,7 @@ header .container nav .navbar-brand .nav-sec {
     background-color: #c13584; /* Instagram color */
 }
 
-header .container nav .search-box input {
+/* header .container nav .search-box input {
     padding: 0px 10px 0px 20px;
     font-size: 14px;
     border: none;
@@ -165,7 +165,7 @@ header .container nav .search-box button {
     cursor: pointer;
     height: 100%;
     border-radius: 0 100px 100px 0;
-}
+} */
 
 header .container nav .search-box button i {
     color: #c6c6c6;
@@ -181,7 +181,7 @@ header .menu-icon span {
     background: #fff;
     width: 18px;
     height: 2px;
-    margin: 6px 0;
+    margin: 6px 5px;
 }
 
 header .menu-icon span:nth-child(2) {
@@ -325,14 +325,15 @@ section.index-about-sec h5 {
     margin-bottom: 31px;
 }
 
-section.index-about-sec .layer .container h2 {
+/* section.index-about-sec .layer .container h2 {
     font-size: 50px;
     line-height: 27px;
     color: whitesmoke;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+} */
+
 
 section.index-about-sec ul li {
     text-align: left;
@@ -344,7 +345,7 @@ section.index-about-sec ul li {
 
 section.index-about-sec ul li .index-abt-content {
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 20px;
     /* Set fixed width for the card */
     width: 250px;
     height: 300px;
@@ -841,14 +842,6 @@ footer nav ul li i {
     font-weight: 700;
     color: #000000;
 }
-
-/* footer nav ul li a {
-    font-size: 14px;
-    letter-spacing: -0.6px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #000000;
-} */
 
 footer ul li {
     display: inline-block;
@@ -2001,8 +1994,7 @@ section.contact-page ul li:nth-child(2) {
     /* ------end of about page------ */
 }
 
-
-
+/** MEDIA DISPLAYS */
 @media(max-width:992px) {
     header .navbar .header-nav {
         position: fixed;
@@ -2436,7 +2428,7 @@ section.contact-page ul li:nth-child(2) {
 
 @media(max-width:480px) {
     section.banner .container h1 {
-        padding: 0;
+        padding: 10px;
         font-size: 30px;
     }
 
@@ -2656,8 +2648,123 @@ section.contact-page ul li:nth-child(2) {
 }
 
 @media(max-width:375px) {
-    section.banner .container h1 {
-        font-size: 27px;
+    .index-about-sec .container {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        flex-wrap: wrap; /* Allow items to wrap */
+    }
+    
+    #phase-card {
+        width: 100%; /* Ensure the card takes full width */
+    }
+    section.index-blog ul li .overlay .blog-img figure {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.7s;
+    }
+
+    /* FOOTER */
+    footer {
+        width: 100%;
+        float: left;
+        background: url(../images/footer-bg.jpg);
+        min-height: 100px;
+        display: flex;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    footer .layer {
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(90deg, rgba(220, 83, 181, 0.7) 15%, rgba(109, 199, 239, 0.7) 82%);
+    }
+
+    footer ul li {
+        display: inline-flex;
+    
+    }
+
+    footer ul li:last-child p {
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: -0.2px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+
+    header .container {
+        display: flex;
+        justify-items: center;
+        
+    }
+
+    .banner .container h1 {
+        display: inline-block; /* Allow the background to expand based on content */
+        background-color: #f0f0f0; /* Background color */
+        padding: 10px; /* Adjust padding as needed */
+        margin: 0; /* Remove default margin */
+    }
+
+
+    header .menu-icon {
+        cursor: pointer;
+        width: 18px;
+    }
+    
+    header .menu-icon span {
+        display: block;
+        background: #fff;
+        width: 20px;
+        height: 2px;
+        margin: 7px 7px;
+    }
+    
+    header .menu-icon span:nth-child(2) {
+        width: 20px;
+    }
+    
+    header .menu-icon span:last-child {
+        width: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar-brand img {
+        width: 170px !important; /* Override width */
+        height: 170px !important; /* Override height */
+    }
+
+
+    header .container nav .get-started-btn-about {
+        font-size: 10px;
+        font-weight: 700;
+        color: black;
+        text-align: center;
+        background: linear-gradient(180deg, rgba(255, 244, 123, 1) 22%, rgba(255, 223, 49, 1) 95%);
+        display: inline-block;
+        text-transform: uppercase;
+        min-width: 100px;
+        min-height: 30px;
+        line-height: 30px;
+        border-radius: 100px;
+        transition: all 0.5s;
+        margin-right: 18px;
+    }
+   
+
+    section.banner .container .audio {
+        font-size: 20px;
+        display: inline-block;
+        text-transform: uppercase;
+        min-width: 200px;
+        min-height: 50px;
+        transition: all 0.5s;
+
     }
 
     section.index-blog .container h3 {
@@ -2665,7 +2772,7 @@ section.contact-page ul li:nth-child(2) {
     }
 
     section.banner .container h1 {
-        font-size: 28px;
+        font-size: 20px;
         line-height: 32px;
     }
 
@@ -2708,18 +2815,66 @@ section.contact-page ul li:nth-child(2) {
     }
 }
 
-@media(max-width:360px) {
-    section.index-about-sec h5 {
-        font-size: 18px;
-        line-height: 24px;
+@media(max-width:320px) {
+
+    header .container {
+        display: flex;
+        justify-items: center;
+        
     }
 
+    header .menu-icon {
+        cursor: pointer;
+        width: 18px;
+    }
+    
+    header .menu-icon span {
+        display: block;
+        background: #fff;
+        width: 20px;
+        height: 2px;
+        margin: 7px 7px;
+    }
+    
+    header .menu-icon span:nth-child(2) {
+        width: 20px;
+    }
+    
+    header .menu-icon span:last-child {
+        width: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar-brand img {
+        width: 120px !important; /* Override width */
+        height: 120px !important; /* Override height */
+    }
+
+    section.index-about-sec h5 {
+        font-size: 15px;
+        line-height: 24px;
+    } 
+
     .service-images ul.article-section li h4 {
-        font-size: 20px;
+        font-size: 10px;
+    }
+
+    .nav-items {
+        display: none;
     }
 }
 
 @media(max-width:320px) {
+    section.index-blog ul li .overlay .blog-img figure {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.7s;
+    }
+
     section.blogsingle h3 {
         font-size: 18px;
         line-height: 28px;
@@ -2736,7 +2891,7 @@ section.contact-page ul li:nth-child(2) {
     }
 
     section.blogsingle p {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     section.blogsingle ul li .overlay a:first-child h5 {
@@ -2744,11 +2899,58 @@ section.contact-page ul li:nth-child(2) {
     }
 
     section.banner .container h1 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
-    section.services-page ul li .services-inner h3 i {
+    section.banner .container .audio {
+        font-size: 20px;
         display: inline-block;
-        line-height: 37px;
+        text-transform: uppercase;
+        min-width: 180px;
+        min-height: 40px;
+        transition: all 0.5s;
+
+    }
+
+    header .container nav .get-started-btn-about {
+        font-size: 10px;
+        font-weight: 700;
+        color: black;
+        text-align: center;
+        background: linear-gradient(180deg, rgba(255, 244, 123, 1) 22%, rgba(255, 223, 49, 1) 95%);
+        display: inline-block;
+        text-transform: uppercase;
+        min-width: 100px;
+        min-height: 30px;
+        line-height: 30px;
+        border-radius: 100px;
+        transition: all 0.5s;
+        margin-right: 21px;
+    }
+        
+    #social {
+        display: flex;
+        justify-content: center; /* Horizontally center the items */
+    }
+    
+    #social li {
+        list-style: none; /* Remove default list styles */
+        margin: 0 10px; /* Adjust margin between icons */
+    }
+    
+    #social a {
+        display: inline-block; /* Ensure icons are displayed as blocks */
+        text-decoration: none; /* Remove underline from links */
+    }
+    
+    /* Style for the icons */
+    #social a i {
+        font-size: 30px; /* Increase icon size */
+        /* Additional styles to make the icon more prominent */
+        padding: 15px; /* Add padding around the icon */
+        border: 2px solid black; /* Add border around the icon */
+        border-radius: 50%; /* Make the border circular for a button-like appearance */
     }
 }
+
+
